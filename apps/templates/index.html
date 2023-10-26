@@ -1,0 +1,236 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="{% static 'ic.png' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Festiwal</title>
+</head>
+<body>
+
+    
+    <nav id="home">
+    <div class="container">
+        <div class="collaps">
+
+
+        <ul class="menu-navi">
+
+            <li class="nav-item"><a href="#home">Strona główna</a></li>
+            <li class="nav-item"><a href="#event">Wydarzenie</a></li>
+            <li class="nav-item"><a href="#singup">Zapisz się</a></li>
+            <li class="nav-item"><a href="#contact">Kontakt</a></li>
+
+
+        </ul>
+
+    </div>
+    
+    <button class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </button>
+
+    </div>
+    </nav>
+
+    <div class="container2">
+        <p class="TxtOnImg">Program 2023</p>   
+</div>
+
+
+    <section id="event" class="produkt">
+<div class="H_value">
+    <h1>Artyści</h1>
+</div>
+        <div class="szereg" >
+          <div class="card">
+            <div class="top-section">
+                <h5>Krasnal</h5>
+                <img id="image-container" src="{% static 'kc.jpg' %}">
+            </div>
+            <div class="product-info">
+                <span class="info">
+                    Środa <br>
+                    28/06/2023
+                  </span>
+            </div>
+        </div>
+        <div class="card">
+          <div class="top-section">
+              <h5>Krasnal</h5>
+              <img id="image-container" src="{% static 'kc.jpg' %}">
+          </div>
+          <div class="product-info">
+              <span class="info">
+                  Środa <br>
+                  28/06/2023
+                </span>
+          </div>
+      </div>
+      <div class="card">
+        <div class="top-section">
+            <h5>Krasnal</h5>
+            <img id="image-container" src="{% static 'kc.jpg' %}">
+        </div>
+        <div class="product-info">
+            <span class="info">
+                Środa <br>
+                28/06/2023
+              </span>
+        </div>
+    </div>
+    <div class="card">
+      <div class="top-section">
+          <h5>Krasnal</h5>
+          <img id="image-container" src="{% static 'kc.jpg' %}">
+      </div>
+      <div class="product-info">
+          <span class="info">
+              Środa <br>
+              28/06/2023
+            </span>
+      </div>
+  </div>
+  <div class="card">
+    <div class="top-section">
+        <h5>Krasnal</h5>
+        <img id="image-container" src="{% static 'kc.jpg' %}">
+    </div>
+    <div class="product-info">
+        <span class="info">
+            Środa <br>
+            28/06/2023
+          </span>
+    </div>
+</div>
+<div class="card">
+  <div class="top-section">
+      <h5>Krasnal</h5>
+      <img id="image-container" src="{% static 'kc.jpg' %}">
+  </div>
+  <div class="product-info">
+      <span class="info">
+          Środa <br>
+          28/06/2023
+        </span>
+  </div>
+</div>
+<div class="card">
+  <div class="top-section">
+      <h5>Krasnal</h5>
+      <img id="image-container" src="{% static 'kc.jpg' %}">
+  </div>
+  <div class="product-info">
+      <span class="info">
+          Środa <br>
+          28/06/2023
+        </span>
+  </div>
+</div>
+<div class="card">
+  <div class="top-section">
+      <h5>Krasnal</h5>
+      <img id="image-container" src="{% static 'kc.jpg' %}">
+  </div>
+  <div class="product-info">
+      <span class="info">
+          Środa <br>
+          28/06/2023
+        </span>
+  </div>
+</div>
+  
+</div>
+</section>
+
+<section id="singup" class="SingUp">
+    <div class="singup_area">
+        <div class="TimeToLeft">
+            <h2 class="h2_TimeToLeft">Nie czekaj - Zapisz się już teraz</h2>
+            <h3 id="h3"></h3>
+
+        </div>
+
+
+        <div class="form_area">
+        <Form class="form" action="/" method="post">
+            {% csrf_token %}
+    
+            
+            <lebel class="controllabel" for="name">Imię</lebel>
+            <input class="controlinput" type="text" name="name" placeholder="Wprowadz imię" required>
+            
+            <label class="controllabel" for="fname">Nazwisko</label>
+            <input class="controlinput" type="text" name="fname" placeholder="Wprowadz nazwisko" required>
+            
+            <label class="controllabel" for="mail">E-mail</label>
+            <input class="controlinput" type="mail" name="mail" placeholder="Wprowadz E-mail" required>
+
+            <button  onclick="send()" class="btn" type="submit"><p> Zapisz się!</p></button>
+            
+            </Form>     
+        </div>
+
+    </div>
+        
+
+</section>
+
+<section id="contact" class="contact">
+    <div class="contact_container">
+        <h4>Skontaktuj się z nami</h4>
+        <p class="p_contact"><a href="kontakt@festiwal.pl">kontakt@festiwal.pl</a></p>
+        <p class="p_contact"><a href="media@festiwal.pl">media@festiwal.pl</a></p>
+        <p class="p_contact"><a href="#">444-555-666</a></p>
+        <p class="p_contact"><a href="#">777-888-999</a></p>
+    </div>
+</section>
+
+
+<footer style="background-image: url('{% static 'footerimg.jpg'%}');">
+    <div class="footer_container">
+        <div class="row_top">
+            <div class="header_top">
+                <h6>Social</h6>
+
+            </div>
+            <ul class="footer_ul">
+                
+                <li class="footer_li"><a href="https://www.facebook.com/?locale=pl_PL"><i class="fa-brands fa-facebook fa-2xl" style="color: #123e89;"></i></a></li>
+                <li class="footer_li"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl" style="color: #e232b3;"></i></a></li>
+                <li class="footer_li"><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube fa-2xl" style="color: #f41515;"></i></a></li>
+                <li id="footer_li" class="footer_li"><a href="https://open.spotify.com/"><i class="fa-brands fa-spotify fa-2xl" style="color: #1d952b;"></i></a></li>
+                
+            </ul>
+
+        </div>
+
+        <div class="row_bott">
+            <div class="Author">
+                <h2 class="h2_author">Projekt i realizacja:</h2>
+                <p class="p_author">Kuba x Julka</p>
+            </div>
+            <hr>
+            <p class="copyrights">Copyright © 2023 - Wszelkie prawa zastrzeżone.</p>
+        </div>
+
+    </div>
+
+    
+</footer>
+
+
+<a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+
+<script src="{% static 'script.js' %}"></script>
+</body>
+</html>
